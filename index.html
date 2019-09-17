@@ -1,49 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/atividade1.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="CSS/atividadebulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146502858-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146502858-1');
-</script>
-
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146502858-1"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-146502858-1');
+ </script>
+ 
 </head>
 
 <body>
-    <header>
-        <img src="img/bobesponja1.jpg" alt="imagem de logo do bob esponja fazendo arco-íris" class="logo">
-        <nav>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </nav>
-    </header>
-    <main>
-        <img src="img/bobesponja1.jpg" alt="imagem do bob esponja fazendo arco-íris" class="destaque">
-        <p class="texto">Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum.</p>
-    </main>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <span class="icon has-text-danger ">
+                    <i class="fas fa-ice-cream"></i>
+
+                  </span>
+
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item">
+                    Link
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Dropdown
+                    </a>
+                    <a class="navbar-item">
+                        Documentation
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <img src="img/finnejake.jpg" alt="Bnner do fin e jake - hora da aventura">
+        <p>Finn e Jake - Hora da aventura</p>
+
+    </div>
+    <section class="imagens">
+        <img src="img/jake.jpg" alt="imagem do jake">
+        <img src="img/jake.jpg" alt="imagem do jake">
+        <img src="img/jake.jpg" alt="imagem do jake">
+        <img src="img/jake.jpg" alt="imagem do jake">
+    </section>
+    <section class="imagensjake">
+        <img src="img/finn.jpg" alt="imagem do finn">
+        <img src="img/finn.jpg" alt="imagem do finn">
+    </section>
     <footer>
         Todos os direitos reservados.
     </footer>
-
 </body>
 
 </html>
